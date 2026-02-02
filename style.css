@@ -84,6 +84,7 @@ header nav ul {
   font-weight: 500;
   font-size: 15px;
   line-height: 23px;
+  border: none;
 }
 
 /* Hero Styles */
@@ -198,4 +199,16 @@ header nav ul {
 
 .image-section img {
   border-radius: 20px;
+}
+
+/* trusted by styles */
+
+.trusted-by {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: 0 auto;
+  padding: 72px 32px 144px 32px;
 }
