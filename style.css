@@ -252,7 +252,7 @@ a {
 
 .feature-highlights div {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .feature-highlights div section {
@@ -261,15 +261,43 @@ a {
   gap: 1.5rem;
 }
 
+.feature {
+  width: 30vw;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .feature div {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.feature {
-  width: 35vw;
-  padding: 2rem;
-  border: 2px solid red;
+.feature .keyword {
+  font-family: "Geist Mono", monospace;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #0c8c5e;
+  text-align: left;
 }
 
+.feature h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+  text-align: left;
+}
+
+.feature .description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #08090acc;
+  text-align: left;
+}
+
+.feature img {
+  width: 100%;
+}
