@@ -221,9 +221,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
   margin-top: 4rem;
   flex-direction: column;
+  width: fit-content;
+  justify-self: center;
 }
 
 /* .feature-highlights header styles */
@@ -250,7 +252,7 @@ a {
 
 /* .feature-highlights div styles */
 
-.feature-highlights div {
+.feature-highlights .feature-container {
   display: flex;
   gap: 1.5rem;
 }
@@ -261,11 +263,13 @@ a {
   gap: 1.5rem;
 }
 
+/* .feature styles */
+
 .feature {
   width: 30vw;
-  padding: 2rem 1rem;
+  padding: 1rem;
   border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .feature div {
@@ -299,5 +303,53 @@ a {
 }
 
 .feature img {
+  width: 100%;
+}
+
+/* .final-feature-container styles */
+
+.final-feature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+/* .big-feature styles */
+
+.big-feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 95%;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.big-feature .keyword {
+  font-family: "Geist Mono", monospace;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #0c8c5e;
+}
+
+.big-feature h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+}
+
+.big-feature .description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #08090acc;
+  width: 32vw;
+}
+
+.big-feature figure img {
   width: 100%;
 }
