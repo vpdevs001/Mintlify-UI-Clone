@@ -20,9 +20,9 @@ a {
   color: inherit;
 }
 
-/* Header Styles */
+/* .nav-container Styles */
 
-header {
+.nav-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -36,23 +36,24 @@ header {
   color: white;
 }
 
-header figure {
+.nav-container figure {
   display: flex;
   align-items: center;
   font-weight: 600;
   gap: 3px;
   font-size: 22px;
   line-height: 32px;
+  cursor: pointer;
 }
 
-header nav {
+.nav-container nav {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
 }
 
-header nav ul {
+.nav-container nav ul {
   display: flex;
   font-weight: 500;
   font-size: 15px;
@@ -93,7 +94,7 @@ header nav ul {
   background-image: url(https://www.mintlify.com/hero/bg-light.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +126,7 @@ header nav ul {
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
+  cursor: pointer;
 }
 
 .new-section a span {
@@ -212,3 +214,62 @@ header nav ul {
   margin: 0 auto;
   padding: 72px 32px 144px 32px;
 }
+
+/* feature-highlights styles */
+
+.feature-highlights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 4rem;
+  flex-direction: column;
+}
+
+/* .feature-highlights header styles */
+
+.feature-highlights header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-highlights header h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.feature-highlights header p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #08090acc;
+  width: 40vw;
+}
+
+/* .feature-highlights div styles */
+
+.feature-highlights div {
+  display: flex;
+  gap: 2rem;
+}
+
+.feature-highlights div section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature {
+  width: 35vw;
+  padding: 2rem;
+  border: 2px solid red;
+}
+
