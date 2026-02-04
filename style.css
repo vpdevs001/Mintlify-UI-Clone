@@ -15,6 +15,10 @@ li {
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -47,9 +51,8 @@ a {
   position: sticky;
   backdrop-filter: blur(12px);
   top: 0;
-  left: 0;
   z-index: 999;
-  color: white;
+  color: #fff;
 }
 
 .nav-container figure {
@@ -592,6 +595,7 @@ a {
   width: 350px;
   overflow: hidden;
   display: -webkit-box;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
@@ -717,4 +721,165 @@ a {
 
 .cards .first-div {
   border-right: 1px solid #cfcfcf;
+}
+
+footer {
+  width: 100%;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  background-color: lab(2.42579% -0.165291 -0.470081 / 0.03);
+}
+
+footer section {
+  margin: 0 auto;
+  width: 70%;
+  border: 1px solid #cfcfcf;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5rem 2rem 1rem 2rem;
+}
+
+.logo figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.logo figcaption {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links img {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.grid-section {
+  padding: 3rem 3rem 4rem 3rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.grid-head {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #08090a80;
+  text-transform: uppercase;
+  cursor: none;
+}
+
+.grid-container p {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.extra-info {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.extra-info p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.extra-info img {
+  width: 70px;
+  cursor: pointer;
+}
+
+.claims {
+  padding: 1rem 2rem 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-btn {
+  padding: 7px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(195, 195, 195, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.detail-btn img {
+  width: 15px;
+}
+
+.detail-btn span {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.claims p {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #08090a99;
+}
+
+.theme-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  background-color: lab(2.42579% -0.165291 -0.470081 / 0.03);
+  border: none;
+  border-radius: 30px;
+  padding: 7px 10px;
+}
+
+.theme-btn img {
+  cursor: pointer;
+}
+
+.current-active {
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 4px;
 }
